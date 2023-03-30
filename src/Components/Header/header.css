@@ -1,0 +1,49 @@
+.tri_link {
+  padding: 0 35px;
+  background: linear-gradient(90deg, #ff9933 0%, #ffffff 51.35%, #138808 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar__link {
+  padding: 0 35px;
+  color: white;
+}
+
+.nav_nav .active {
+  background: #d12d2d;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (max-width: 1150px) {
+  .navbar__link {
+    padding: 0 17.5px;
+  }
+  .tri_link {
+    padding: 0 17.5px;
+  }
+}
+
+@media (max-width: 667px) {
+  .navbar__link {
+    padding: 0 17.5px;
+  }
+  .tri_link {
+    padding: 0 0px;
+  }
+}

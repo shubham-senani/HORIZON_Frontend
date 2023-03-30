@@ -1,0 +1,111 @@
+@keyframes up-down {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes up-down2 {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes diagonal1 {
+  0% {
+    transform: translate(-7px, -7px);
+  }
+  100% {
+    transform: translate(7px, 7px);
+  }
+}
+
+@keyframes diagonal2 {
+  0% {
+    transform: translate(7px, -7px);
+  }
+  100% {
+    transform: translate(-7px, 7px);
+  }
+}
+
+@keyframes front-back {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.animation {
+  width: 34.7vw;
+  height: 34.7vw;
+  position: relative;
+  float: left;
+}
+
+.background {
+  width: 34.7vw;
+  position: absolute;
+}
+
+.man {
+  width: 15vw;
+  position: absolute;
+  left: 27.58%;
+  right: 29.32%;
+  top: 27.74%;
+  bottom: 4.22%;
+
+  animation: up-down 3s ease-in-out infinite alternate;
+}
+
+.atom {
+  width: 7.15vw;
+  position: absolute;
+  left: 78.2%;
+  right: 3.84%;
+  top: 36.07%;
+  bottom: 46.14%;
+
+  animation: diagonal1 2s ease-in-out infinite alternate;
+}
+
+.atom2 {
+  width: 7.22vw;
+  position: absolute;
+  left: 68.06%;
+  right: 14.05%;
+  top: 59.71%;
+  bottom: 22.58%;
+
+  animation: diagonal2 2.7s ease-in-out infinite alternate;
+}
+
+.bracket {
+  width: 8.55vw;
+  position: absolute;
+  left: 7.88%;
+  right: 67.6%;
+  top: 13.07%;
+  bottom: 63.9%;
+
+  animation: front-back 2.5s ease-in-out infinite alternate;
+}
+
+.pentagon {
+  width: 7vw;
+  position: absolute;
+  left: 63.94%;
+  right: 18.1%;
+  top: 10.78%;
+  bottom: 71.43%;
+
+  animation: up-down2 2s ease-in-out infinite alternate;
+}

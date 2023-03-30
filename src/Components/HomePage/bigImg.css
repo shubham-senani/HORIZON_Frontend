@@ -1,0 +1,10 @@
+.bigImg {
+  height: 100vh;
+}
+
+@media screen and (max-width: 667px) {
+  .bigImg {
+    width: 100vw;
+    height: auto;
+  }
+}

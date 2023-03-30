@@ -1,0 +1,543 @@
+.cover {
+  height: 85vh;
+  transition: background 1s ease-in-out;
+}
+
+.user_main {
+  margin-block: 50px;
+  margin-inline: 70px;
+  background-color: black;
+  flex-grow: 1;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: row;
+}
+
+.user_img {
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  position: relative;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(225deg, #d12d2d, #1e149d);
+  background: linear-gradient(99.32deg, #d12d2d 0%, #1e149d 79.64%);
+}
+
+.name {
+  font-family: Bujji;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+
+  background: linear-gradient(99.32deg, #d12d2d 0%, #1e149d 79.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.participation {
+  font-family: Bujji;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 15px;
+
+  color: #b5b0b0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logout {
+  height: 40px;
+  width: 200px;
+  background-color: black;
+  cursor: pointer;
+
+  font-family: Bujji;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 15px;
+
+  background: linear-gradient(90deg, #d12d2d 46.26%, #1e149d 94.71%);
+  -webkit-transition: background 2s ease-out; /* Safari */
+  transition: background 2s ease-out;
+
+  color: #ffffff;
+}
+
+.logout:hover {
+  -webkit-background-clip: text;
+  background: transparent;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(225deg, #d12d2d, #1e149d);
+}
+
+.border {
+  padding: 2px;
+  background: linear-gradient(99.32deg, #d12d2d 0%, #1e149d 79.64%);
+}
+
+.heading_suy {
+  font-family: Bujji;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 60px;
+
+  color: white;
+}
+
+.c2 {
+  background: linear-gradient(90deg, #d12d2d 37.74%, #0b0371 93.02%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card_heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-family: Bujji;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.completed {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+
+  color: rgba(231, 61, 61, 0.72);
+}
+
+.upcoming {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+
+  color: rgba(254, 190, 27, 0.72);
+}
+
+.today {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+
+  color: rgba(32, 228, 0, 0.72);
+}
+
+.card_content {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  color: #b5b0b0;
+}
+
+.card_content2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+
+  color: #b5b0b0;
+}
+
+.teamMembers {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+
+  color: #b5b0b0;
+}
+
+.indiCard {
+  display: flex;
+  flex-direction: column;
+  text-overflow: ellipsis;
+
+  background: transparent;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(225deg, #d12d2d, #1e149d);
+  height: 220px;
+  width: 625px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  padding-inline: 30px;
+  margin-block: 30px;
+  margin-inline: 15px;
+}
+
+.teamCard {
+  display: flex;
+  flex-direction: column;
+
+  background: transparent;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(225deg, #d12d2d, #1e149d);
+  height: 430px;
+  width: 625px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  padding-inline: 30px;
+  margin-block: 30px;
+  margin-inline: 15px;
+}
+
+.card_grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teamName {
+  font-family: Bujji;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  color: white;
+}
+
+.dropdown {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 725px;
+  height: 570px;
+  padding: 25px;
+
+  background: rgba(144, 19, 254, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dropdown_active {
+  position: absolute;
+  z-index: 5;
+  background: linear-gradient(99.32deg, #d12d2d 0%, #1e149d 79.64%);
+  padding: 25px;
+  margin-top: 50px;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(225deg, #d12d2d, #1e149d);
+
+  width: 725px;
+  height: 570px;
+}
+
+.avatar_img {
+  position: absolute;
+  z-index: 0.5;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.avatar_img_dd {
+  width: 183px;
+  height: 183px;
+  margin: 20px;
+}
+
+.edit_icon {
+  position: absolute;
+  background: transparent;
+  cursor: pointer;
+  border: 0px;
+  padding: 0px;
+  right: 0;
+  bottom: 0;
+  z-index: 0.7;
+}
+
+@media (max-width: 1150px) {
+  .user_main {
+    margin-top: 30px;
+    margin-inline: 35px;
+    flex-grow: 1;
+  }
+
+  .completed {
+    font-size: 12px;
+  }
+
+  .upcoming {
+    font-size: 12px;
+  }
+
+  .today {
+    font-size: 12px;
+  }
+
+  .user_img {
+    width: 115px;
+    height: 115px;
+    margin-right: 27px;
+    border: 2px solid;
+  }
+
+  .name {
+    font-size: 24px;
+    line-height: 39px;
+  }
+
+  .participation {
+    font-size: 12px;
+  }
+
+  .logout {
+    height: 23px;
+    width: 128px;
+    font-size: 9px;
+  }
+
+  .heading_suy {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  .card_heading {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .card_heading2 {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .status {
+    font-size: 13px;
+  }
+
+  .card_content {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .card_content2 {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .teamMembers {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .indiCard {
+    height: 148px;
+    width: 350px;
+    padding-top: 24px;
+    padding-bottom: 11px;
+    padding-inline: 18px;
+    margin-block: 15px;
+    margin-inline: 10px;
+  }
+
+  .teamCard {
+    height: 280px;
+    width: 350px;
+    padding-top: 24px;
+    padding-bottom: 11px;
+    padding-inline: 18px;
+    margin-block: 15px;
+    margin-inline: 10px;
+  }
+
+  .teamName {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 435px;
+    height: 342px;
+    padding: 19px;
+  }
+
+  .avatar_img_dd {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+  }
+
+  .edit_icon img {
+    width: 17.5px;
+    height: 17.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .user_main {
+    flex-grow: 1;
+    margin-top: 30px;
+    margin-inline: 20px;
+  }
+
+  .completed {
+    font-size: 10px;
+  }
+
+  .upcoming {
+    font-size: 10px;
+  }
+
+  .today {
+    font-size: 10px;
+  }
+
+  .user_img {
+    width: 90px;
+    height: 90px;
+    margin-right: 25px;
+    border: 2px solid;
+  }
+
+  .name {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .participation {
+    font-size: 9px;
+    line-height: 12.5px;
+    margin-bottom: 3px;
+  }
+
+  .logout {
+    height: 20px;
+    width: 100px;
+
+    font-size: 7.5px;
+    line-height: 7.5px;
+  }
+
+  .heading_suy {
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .card_heading {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .status {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .card_content {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .card_content2 {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .teamMembers {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .indiCard {
+    height: 110px;
+    max-width: 500px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    padding-inline: 15px;
+    margin-block: 15px;
+    margin-inline: 0px;
+  }
+
+  .teamCard {
+    height: 245px;
+    max-width: 500px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin-block: 15px;
+    margin-inline: 7.5px;
+  }
+
+  .card_grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teamName {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .dropdown {
+    width: 328px;
+    height: 258px;
+    padding: 13px;
+  }
+
+  .avatar_img_dd {
+    width: 78px;
+    height: 78px;
+    margin: 11px;
+  }
+
+  .edit_icon img {
+    width: 13.5px;
+    height: 13.5px;
+  }
+
+  .rem {
+    display: none;
+  }
+}

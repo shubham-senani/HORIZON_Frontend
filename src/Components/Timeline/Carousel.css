@@ -1,0 +1,416 @@
+.carousel {
+  margin-left: 15vw;
+  overflow-x: hidden;
+  width: 70%;
+}
+
+.temp1 {
+  display: none;
+}
+
+.temp2 {
+  display: none;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+  justify-content: center;
+  display: inline-block;
+  width: 9vw;
+  margin-left: 30vw;
+}
+
+.carousel-item-active {
+  margin-top: 5vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 7.5vw;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(250, 250, 250, 0) 0%, #574040 100%),
+    linear-gradient(
+      114.88deg,
+      rgba(211, 76, 76, 0.5) 9.29%,
+      rgba(30, 20, 157, 0.5) 49.91%,
+      rgba(24, 18, 18, 0.5) 89.51%
+    );
+  clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+}
+.carousel-item {
+  margin-top: 5vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 7.5vw;
+  color: #fff;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(46, 21, 36, 0.5) 100%
+    ),
+    linear-gradient(
+      114.88deg,
+      rgb(209, 45, 45, 0.5) 9.29%,
+      rgba(30, 20, 157, 0.5) 49.91%,
+      rgb(209, 45, 45, 0.5) 89.51%
+    );
+  clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+}
+
+.date {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  /* identical to box height, or 136% */
+
+  text-align: center;
+  display: inline;
+  color: #b5b0b0;
+}
+.day {
+  font-family: "bujji";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.1vw;
+  /* identical to box height */
+
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.align_suy {
+  margin-inline: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 40px;
+}
+
+.card-listall {
+  border: 2px solid;
+  border-color: #d12d2d;
+  display: flex;
+  flex-direction: column;
+  padding-block: 50px;
+  width: 75%;
+  padding-inline: 45px;
+}
+
+.cardevent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  color: white;
+  font-family: "bujji";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  line-height: 150%;
+  display: inline;
+  float: left;
+  /* or 30px */
+
+  display: flex;
+  align-items: center;
+
+  /* textgradient */
+
+  background: linear-gradient(99.32deg, #d12d2d 0%, #1e149d 119.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.content {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  /* or 136% */
+
+  display: flex;
+  align-items: center;
+
+  color: #b5b0b0;
+}
+
+.time {
+  justify-content: right;
+  left: 74.36%;
+  right: 4.91%;
+  bottom: 60.15%;
+  font-family: "bujji";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+  display: inline;
+  float: right;
+  align-items: center;
+
+  color: #b5b0b0;
+}
+
+.view-button {
+  display: flex;
+  width: 253px;
+  height: 50px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #d12d2d 46.26%, #1e149d 94.71%);
+  -webkit-transition: background 2s ease-out; /* Safari */
+  transition: background 2s ease-out;
+}
+.view-button:hover {
+  background: transparent;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(225deg, #d12d2d, #1e149d);
+}
+
+.button-text {
+  color: white;
+  font-family: "bujji";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 15px;
+  margin-bottom: 0px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.linedate {
+  position: absolute;
+  margin-top: -1.5vw;
+  width: 100%;
+}
+
+.arrows {
+  margin-top: 3vw;
+  margin-left: 31.25vw;
+}
+
+.arrows .img1,
+.img2 {
+  width: 3vw;
+}
+
+.arrows .img2 {
+  margin-left: 1.5vw;
+}
+
+@media screen and (max-width: 1150px) {
+  .date {
+    font-size: 12px;
+  }
+  .day {
+    font-size: 16px;
+  }
+
+  .temp2 {
+    display: block;
+  }
+
+  .temp {
+    display: none;
+  }
+
+  .temp1 {
+    display: none;
+  }
+  .carousel {
+    margin-left: 20vw;
+    overflow: hidden;
+    width: 60vw;
+  }
+  .inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    justify-content: center;
+    display: inline-block;
+    width: 18vw;
+    margin-left: 20vw;
+  }
+  .carousel-item,
+  .carousel-item-active {
+    /* margin-top: 5vw; */
+    height: 14vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  .carousel1 {
+    /* margin-left: 20vw; */
+    overflow: visible;
+    /* width: 60vw; */
+  }
+  .arrows .img1,
+  .img2 {
+    width: 5vw;
+  }
+
+  .arrows .img1 {
+    /* margin-top: -23vw; */
+    margin-left: -6vw;
+  }
+  .align_suy {
+    margin-inline: 40px;
+    margin-inline: 25px;
+  }
+  .card-listall {
+    padding-inline: 25px;
+    padding-block: 30px;
+    width: 100%;
+  }
+  .heading {
+    font-size: 16px;
+  }
+  .time {
+    font-size: 12px;
+  }
+  .indicators {
+    width: 65vw;
+  }
+  .content {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .button-text {
+    font-size: 10px;
+  }
+  .view-button {
+    width: 200px;
+    height: 32px;
+  }
+  .App {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .carousel {
+    margin-left: 30vw;
+    overflow: hidden;
+    width: 40vw;
+  }
+  .inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    justify-content: center;
+    display: inline-block;
+    width: 36vw;
+    margin-left: 0vw;
+  }
+  .carousel-item,
+  .carousel-item-active {
+    margin-top: 5vw;
+    height: 30vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .linedate {
+    position: absolute;
+    margin-top: -1.5vw;
+    width: 250%;
+    height: 2px;
+    margin-left: -30vw;
+  }
+  .carousel1 {
+    margin-left: 30vw;
+    overflow: visible;
+    width: 40vw;
+  }
+  .arrows .img1,
+  .img2 {
+    width: 10vw;
+  }
+
+  .arrows .img1 {
+    margin-top: -45vw;
+    margin-left: -55vw;
+  }
+  .arrows .img2 {
+    margin-top: -45vw;
+    margin-left: 68vw;
+  }
+
+  .temp {
+    display: none;
+  }
+
+  .temp1 {
+    display: block;
+    /* margin-bottom: 0.25rem; */
+  }
+  .temp2 {
+    display: none;
+  }
+  .align_suy {
+    margin-inline: 16px;
+    margin-block: 16px;
+  }
+  .card-listall {
+    padding-inline: 15px;
+    padding-block: 15px;
+    width: 100%;
+  }
+  .cardevent {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .day {
+    font-size: 14px;
+  }
+  .date {
+    font-size: 10px;
+  }
+  .indicators {
+    width: 65vw;
+  }
+  .time {
+    margin-bottom: 5px;
+  }
+  .content {
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 12px;
+  }
+  .button-text {
+    font-size: 8px;
+  }
+  .view-button {
+    width: 150px;
+    height: 30px;
+  }
+  .App {
+    margin-bottom: 0px;
+  }
+}
